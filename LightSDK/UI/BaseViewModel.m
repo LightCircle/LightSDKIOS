@@ -8,8 +8,8 @@
 
 #import "BaseViewModel.h"
 #import "Jastor.h"
-#import <SmartSDK/RestHTTPRequestManager.h>
-#import <SmartSDK/RestHelper.h>
+#import <LightSDK/RestHTTPRequestManager.h>
+#import <LightSDK/RestHelper.h>
 #import <Underscore.h>
 
 @interface BaseViewModel ()

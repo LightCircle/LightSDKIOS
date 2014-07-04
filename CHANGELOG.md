@@ -1,4 +1,4 @@
-# SmartSDK CHANGELOG
+# LightSDK CHANGELOG
 
 ## 0.1.0
 

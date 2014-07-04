@@ -1,7 +1,7 @@
-# SmartSDK
+# LightSDK
 
-<!-- [![Version](http://cocoapod-badges.herokuapp.com/v/SmartSDK/badge.png)](http://cocoadocs.org/docsets/SmartSDK)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/SmartSDK/badge.png)](http://cocoadocs.org/docsets/SmartSDK)
+<!-- [![Version](http://cocoapod-badges.herokuapp.com/v/LightSDK/badge.png)](http://cocoadocs.org/docsets/LightSDK)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/LightSDK/badge.png)](http://cocoadocs.org/docsets/LightSDK)
  -->
 ## Usage
 
@@ -23,17 +23,17 @@ To run the example project; clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-SmartSDK is available through [CocoaPods](http://cocoapods.org), to install
+LightSDK is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
-    pod "SmartSDK"
+    pod "LightSDK"
 
 ## Documents
 
 本工程包含如下模块:
 
   - Config    : 用于存储配置信息.
-  - Entity    : 映射 Smart 平台的数据接口.
+  - Entity    : 映射 Light 平台的数据接口.
   - Logger    : Log 模块,支持 operation log.
   - Rest      : 用于跟后台 REST API 交互.
   - Storable  : 用户 App 中的数据存储,可直接存储 `DAEntity` 的子类.
@@ -48,5 +48,5 @@ fzcs, fzcs@live.cn
 
 ## License
 
-SmartSDK is available under the MIT license. See the LICENSE file for more info.
+LightSDK is available under the MIT license. See the LICENSE file for more info.
 

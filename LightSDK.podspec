@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name             = "SmartSDK"
+  s.name             = "LightSDK"
   s.version          = "0.0.1"
-  s.summary          = "iOS SDK for Smart."
+  s.summary          = "iOS SDK for Light."
   s.description      = <<-DESC
-                       iOS SDK for Smart.
+                       iOS SDK for Light.
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
@@ -12,46 +12,46 @@ Pod::Spec.new do |s|
   s.screenshots      = "http://www.dreamarts.com.cn/images/content/hi_1.png", "http://www.dreamarts.com.cn/images/content/hi_4.jpg"
   s.license          = 'MIT'
   s.author           = { "fzcs" => "fzcs@live.cn" }
-  #s.source          = { :git => "https://github.com/fzcs/SmartSDK.git", :tag => s.version.to_s }
-  s.source           = { :git => "https://github.com/SmartCircle/SmartSDKIOS.git" }
+  #s.source          = { :git => "https://github.com/fzcs/LightSDK.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/LightCircle/LightSDKIOS.git" }
   s.social_media_url = 'http://www.dreamarts.com.cn'
 
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.requires_arc = true
 
-  s.source_files = 'SmartSDK/SmartSDK.h'
+  s.source_files = 'LightSDK/LightSDK.h'
 
   s.subspec 'Entity' do |ss|
-    ss.source_files = 'SmartSDK/Entity/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Entity/**/*.{h,m}'
   end
 
   s.subspec 'Logger' do |ss|
-    ss.source_files = 'SmartSDK/Logger/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Logger/**/*.{h,m}'
   end
 
   s.subspec 'Rest' do |ss|
-    ss.source_files = 'SmartSDK/Rest/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Rest/**/*.{h,m}'
   end
 
   s.subspec 'Storable' do |ss|
-    ss.source_files = 'SmartSDK/Storable/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Storable/**/*.{h,m}'
   end
 
   s.subspec 'Util' do |ss|
-    ss.source_files = 'SmartSDK/Util/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Util/**/*.{h,m}'
   end
 
   s.subspec 'WebSocket' do |ss|
-    ss.source_files = 'SmartSDK/WebSocket/**/*.{h,m}'
+    ss.source_files = 'LightSDK/WebSocket/**/*.{h,m}'
   end
 
   s.subspec 'Config' do |ss|
-    ss.source_files = 'SmartSDK/Config/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Config/**/*.{h,m}'
   end
 
   s.subspec 'UI' do |ss|
-    ss.source_files = 'SmartSDK/UI/**/*.{h,m}'
+    ss.source_files = 'LightSDK/UI/**/*.{h,m}'
   end
 
 

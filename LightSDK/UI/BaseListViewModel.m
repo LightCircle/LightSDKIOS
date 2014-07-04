@@ -7,7 +7,7 @@
 //
 
 #import "BaseListViewModel.h"
-#import <SmartSDK/RestHTTPRequestManager.h>
+#import <LightSDK/RestHTTPRequestManager.h>
 #import <Underscore.h>
 #import "DAEntity.h"
 #import <RestHelper.h>

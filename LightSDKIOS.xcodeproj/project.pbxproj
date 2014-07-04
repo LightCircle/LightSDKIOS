@@ -12,8 +12,8 @@
 		F2664A18192CE01C0040E1E0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F2664A19192CE01C0040E1E0 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		F2664A1A192CE01C0040E1E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		F2664A1B192CE01C0040E1E0 /* SmartSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SmartSDK; sourceTree = "<group>"; };
-		F2664A1C192CE01C0040E1E0 /* SmartSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SmartSDK.podspec; sourceTree = "<group>"; };
+		F2664A1B192CE01C0040E1E0 /* LightSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LightSDK; sourceTree = "<group>"; };
+		F2664A1C192CE01C0040E1E0 /* LightSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = LightSDK.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -25,8 +25,8 @@
 				F2664A18192CE01C0040E1E0 /* LICENSE */,
 				F2664A19192CE01C0040E1E0 /* Rakefile */,
 				F2664A1A192CE01C0040E1E0 /* README.md */,
-				F2664A1B192CE01C0040E1E0 /* SmartSDK */,
-				F2664A1C192CE01C0040E1E0 /* SmartSDK.podspec */,
+				F2664A1B192CE01C0040E1E0 /* LightSDK */,
+				F2664A1C192CE01C0040E1E0 /* LightSDK.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -38,7 +38,7 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = F2664A13192CDFE10040E1E0 /* Build configuration list for PBXProject "SmartSDKIOS" */;
+			buildConfigurationList = F2664A13192CDFE10040E1E0 /* Build configuration list for PBXProject "LightSDKIOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -69,7 +69,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2664A13192CDFE10040E1E0 /* Build configuration list for PBXProject "SmartSDKIOS" */ = {
+		F2664A13192CDFE10040E1E0 /* Build configuration list for PBXProject "LightSDKIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2664A14192CDFE10040E1E0 /* Debug */,

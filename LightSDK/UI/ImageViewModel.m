@@ -7,8 +7,8 @@
 //
 
 #import "ImageViewModel.h"
-#import <SmartSDK/RestHTTPRequestManager.h>
-#import <SmartSDK/RestHelper.h>
+#import <LightSDK/RestHTTPRequestManager.h>
+#import <LightSDK/RestHelper.h>
 #import <UIImageView+WebCache.h>
 @implementation DAFile
 @end

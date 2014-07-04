@@ -1,4 +1,4 @@
-pod "SmartSDK", :path => "../"
+pod "LightSDK", :path => "../"
 
 target "Demo" do
 end
