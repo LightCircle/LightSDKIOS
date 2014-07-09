@@ -8,13 +8,13 @@ Pod::Spec.new do |s|
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "http://www.dreamarts.com.cn"
-  s.screenshots      = "http://www.dreamarts.com.cn/images/content/hi_1.png", "http://www.dreamarts.com.cn/images/content/hi_4.jpg"
+  s.homepage         = "http://www.alphabets.com.cn"
+  s.screenshots      = "http://www.alphabets.com.cn/images/content/hi_1.png", "http://www.alphabets.com.cn/images/content/hi_4.jpg"
   s.license          = 'MIT'
   s.author           = { "fzcs" => "fzcs@live.cn" }
   #s.source          = { :git => "https://github.com/fzcs/LightSDK.git", :tag => s.version.to_s }
   s.source           = { :git => "https://github.com/LightCircle/LightSDKIOS.git" }
-  s.social_media_url = 'http://www.dreamarts.com.cn'
+  s.social_media_url = 'http://www.alphabets.cn'
 
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'

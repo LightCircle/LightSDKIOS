@@ -12,8 +12,8 @@
 #define kHTTPHeaderCookieName   @"Set-Cookie"
 #define kHTTPHeaderCsrftoken    @"csrftoken"
 
-#define kHTTPCookie         @"jp.co.dreamarts.smart.sdk.cookie"
-#define kHTTPCsrfToken      @"jp.co.dreamarts.smart.sdk.csrftoken"
+#define kHTTPCookie         @"jp.co.alphabets.smart.sdk.cookie"
+#define kHTTPCsrfToken      @"jp.co.alphabets.smart.sdk.csrftoken"
 
 @interface RestHelper () <UIWebViewDelegate>
 @property RACSubject *authSignal;
