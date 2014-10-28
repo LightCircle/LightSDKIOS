@@ -40,6 +40,10 @@
 		F280569919FFAA55007095A2 /* ABLoggerFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F280569719FFAA55007095A2 /* ABLoggerFormatter.h */; };
 		F280569A19FFAA55007095A2 /* ABLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F280569819FFAA55007095A2 /* ABLoggerFormatter.m */; };
 		F280569C19FFB2A9007095A2 /* LightSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F280569B19FFB2A9007095A2 /* LightSDK.podspec */; };
+		F28056A319FFBA29007095A2 /* ABAPIUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = F28056A019FFBA29007095A2 /* ABAPIUrl.h */; };
+		F28056A419FFBA29007095A2 /* ABEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = F28056A119FFBA29007095A2 /* ABEntities.h */; };
+		F28056A519FFBA29007095A2 /* ABEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = F28056A219FFBA29007095A2 /* ABEntities.m */; };
+		F28056AC19FFC5EC007095A2 /* ABDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = F28056AA19FFC5EC007095A2 /* ABDefine.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,10 @@
 		F280569719FFAA55007095A2 /* ABLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoggerFormatter.h; sourceTree = "<group>"; };
 		F280569819FFAA55007095A2 /* ABLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLoggerFormatter.m; sourceTree = "<group>"; };
 		F280569B19FFB2A9007095A2 /* LightSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LightSDK.podspec; sourceTree = "<group>"; };
+		F28056A019FFBA29007095A2 /* ABAPIUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAPIUrl.h; sourceTree = "<group>"; };
+		F28056A119FFBA29007095A2 /* ABEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABEntities.h; sourceTree = "<group>"; };
+		F28056A219FFBA29007095A2 /* ABEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABEntities.m; sourceTree = "<group>"; };
+		F28056AA19FFC5EC007095A2 /* ABDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,7 @@
 		F280561819FF93CE007095A2 /* LightSDK */ = {
 			isa = PBXGroup;
 			children = (
+				F280569F19FFBA29007095A2 /* Entities */,
 				F280568219FFA9A5007095A2 /* Logger */,
 				F280567719FFA8CC007095A2 /* Util */,
 				F280567219FFA865007095A2 /* Storable */,
@@ -261,6 +270,7 @@
 			children = (
 				F280567819FFA8CC007095A2 /* ABHelper.h */,
 				F280567919FFA8CC007095A2 /* ABHelper.m */,
+				F28056AA19FFC5EC007095A2 /* ABDefine.h */,
 				F280567A19FFA8CC007095A2 /* ABMacros.h */,
 				F280567E19FFA90A007095A2 /* NSString+ABUtil.h */,
 				F280567F19FFA90A007095A2 /* NSString+ABUtil.m */,
@@ -280,6 +290,16 @@
 			path = Logger;
 			sourceTree = "<group>";
 		};
+		F280569F19FFBA29007095A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F28056A019FFBA29007095A2 /* ABAPIUrl.h */,
+				F28056A119FFBA29007095A2 /* ABEntities.h */,
+				F28056A219FFBA29007095A2 /* ABEntities.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -291,6 +311,9 @@
 				F280565719FF9A06007095A2 /* KxMenu.h in Headers */,
 				F280568C19FFA9A5007095A2 /* ABLogger.h in Headers */,
 				F280565D19FF9A06007095A2 /* WTStatusWindow.h in Headers */,
+				F28056AC19FFC5EC007095A2 /* ABDefine.h in Headers */,
+				F28056A319FFBA29007095A2 /* ABAPIUrl.h in Headers */,
+				F28056A419FFBA29007095A2 /* ABEntities.h in Headers */,
 				F280567D19FFA8CC007095A2 /* ABMacros.h in Headers */,
 				F280567519FFA865007095A2 /* ABStorable.h in Headers */,
 				F280565B19FF9A06007095A2 /* WTStatusView.h in Headers */,
@@ -439,6 +462,7 @@
 			files = (
 				F280569A19FFAA55007095A2 /* ABLoggerFormatter.m in Sources */,
 				F280567C19FFA8CC007095A2 /* ABHelper.m in Sources */,
+				F28056A519FFBA29007095A2 /* ABEntities.m in Sources */,
 				F280567619FFA865007095A2 /* ABStorable.m in Sources */,
 				F280563619FF9413007095A2 /* ABConfigManager.m in Sources */,
 				F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */,

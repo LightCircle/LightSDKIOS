@@ -6,7 +6,9 @@
 //  Copyright (c) 2014年 Alphabets. All rights reserved.
 //
 
-#import "LightSDK.h"
+#import "ABHelper.h"
+#import "ABDefine.h"
+#import "ABConfigManager.h"
 
 @implementation ABHelper
 
@@ -117,7 +119,7 @@
     if( date == nil ) {
         date = [NSDate date];
     }
-    NSDateComponents* comps = [[NSCalendar currentCalendar] components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:date];
+    NSDateComponents* comps = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:date];
     return [[NSCalendar currentCalendar] dateFromComponents:comps];
 }
 
