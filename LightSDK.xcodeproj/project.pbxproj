@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33AA9BA5FCBFDF266B96BC4F /* libPods-LightSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8400C96740B84AFBF9FFFB75 /* libPods-LightSDK.a */; };
+		F280561C19FF93CE007095A2 /* LightSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F280561B19FF93CE007095A2 /* LightSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F280562219FF93CE007095A2 /* LightSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280561619FF93CE007095A2 /* LightSDK.framework */; };
+		F280562919FF93CE007095A2 /* LightSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F280562819FF93CE007095A2 /* LightSDKTests.m */; };
+		F280563519FF9413007095A2 /* ABConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F280563319FF9413007095A2 /* ABConfigManager.h */; };
+		F280563619FF9413007095A2 /* ABConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F280563419FF9413007095A2 /* ABConfigManager.m */; };
+		F280564B19FF969A007095A2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F280564A19FF969A007095A2 /* Podfile */; };
+		F280565719FF9A06007095A2 /* KxMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = F280564E19FF9A06007095A2 /* KxMenu.h */; };
+		F280565819FF9A06007095A2 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F280564F19FF9A06007095A2 /* KxMenu.m */; };
+		F280565919FF9A06007095A2 /* WTStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F280565119FF9A06007095A2 /* WTStatusBar.h */; };
+		F280565A19FF9A06007095A2 /* WTStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F280565219FF9A06007095A2 /* WTStatusBar.m */; };
+		F280565B19FF9A06007095A2 /* WTStatusView.h in Headers */ = {isa = PBXBuildFile; fileRef = F280565319FF9A06007095A2 /* WTStatusView.h */; };
+		F280565C19FF9A06007095A2 /* WTStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F280565419FF9A06007095A2 /* WTStatusView.m */; };
+		F280565D19FF9A06007095A2 /* WTStatusWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F280565519FF9A06007095A2 /* WTStatusWindow.h */; };
+		F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F280565619FF9A06007095A2 /* WTStatusWindow.m */; };
+		F280566219FF9A22007095A2 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F280566019FF9A22007095A2 /* MBProgressHUD.h */; };
+		F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F280566119FF9A22007095A2 /* MBProgressHUD.m */; };
+		F280566619FF9BB0007095A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566419FF9B56007095A2 /* UIKit.framework */; };
+		F280566819FF9C03007095A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566719FF9C03007095A2 /* Foundation.framework */; };
+		F280566A19FF9C2E007095A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566919FF9C2E007095A2 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F280562319FF93CE007095A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F280560D19FF93CE007095A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F280561519FF93CE007095A2;
+			remoteInfo = LightSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70DEFDA6FFE060A2FD74F114 /* Pods-LightSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightSDK/Pods-LightSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		8400C96740B84AFBF9FFFB75 /* libPods-LightSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LightSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CB98C52C1E1C841FBB5178 /* Pods-LightSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightSDK/Pods-LightSDK.release.xcconfig"; sourceTree = "<group>"; };
+		F280561619FF93CE007095A2 /* LightSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F280561A19FF93CE007095A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F280561B19FF93CE007095A2 /* LightSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightSDK.h; sourceTree = "<group>"; };
+		F280562119FF93CE007095A2 /* LightSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F280562719FF93CE007095A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F280562819FF93CE007095A2 /* LightSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightSDKTests.m; sourceTree = "<group>"; };
+		F280563319FF9413007095A2 /* ABConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABConfigManager.h; sourceTree = "<group>"; };
+		F280563419FF9413007095A2 /* ABConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABConfigManager.m; sourceTree = "<group>"; };
+		F280564A19FF969A007095A2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F280564E19FF9A06007095A2 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
+		F280564F19FF9A06007095A2 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		F280565119FF9A06007095A2 /* WTStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStatusBar.h; sourceTree = "<group>"; };
+		F280565219FF9A06007095A2 /* WTStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStatusBar.m; sourceTree = "<group>"; };
+		F280565319FF9A06007095A2 /* WTStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStatusView.h; sourceTree = "<group>"; };
+		F280565419FF9A06007095A2 /* WTStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStatusView.m; sourceTree = "<group>"; };
+		F280565519FF9A06007095A2 /* WTStatusWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStatusWindow.h; sourceTree = "<group>"; };
+		F280565619FF9A06007095A2 /* WTStatusWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStatusWindow.m; sourceTree = "<group>"; };
+		F280566019FF9A22007095A2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		F280566119FF9A22007095A2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F280566419FF9B56007095A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F280566719FF9C03007095A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F280566919FF9C2E007095A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F280561219FF93CE007095A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F280566A19FF9C2E007095A2 /* CoreGraphics.framework in Frameworks */,
+				F280566819FF9C03007095A2 /* Foundation.framework in Frameworks */,
+				F280566619FF9BB0007095A2 /* UIKit.framework in Frameworks */,
+				33AA9BA5FCBFDF266B96BC4F /* libPods-LightSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F280561E19FF93CE007095A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F280562219FF93CE007095A2 /* LightSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CF956C55FC2586DF704CEA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F280566919FF9C2E007095A2 /* CoreGraphics.framework */,
+				F280566719FF9C03007095A2 /* Foundation.framework */,
+				F280566419FF9B56007095A2 /* UIKit.framework */,
+				8400C96740B84AFBF9FFFB75 /* libPods-LightSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A9D0776311B66C4A0BCEDAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70DEFDA6FFE060A2FD74F114 /* Pods-LightSDK.debug.xcconfig */,
+				86CB98C52C1E1C841FBB5178 /* Pods-LightSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F280560C19FF93CE007095A2 = {
+			isa = PBXGroup;
+			children = (
+				F280564A19FF969A007095A2 /* Podfile */,
+				F280561819FF93CE007095A2 /* LightSDK */,
+				F280562519FF93CE007095A2 /* LightSDKTests */,
+				F280561719FF93CE007095A2 /* Products */,
+				6A9D0776311B66C4A0BCEDAB /* Pods */,
+				1CF956C55FC2586DF704CEA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F280561719FF93CE007095A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F280561619FF93CE007095A2 /* LightSDK.framework */,
+				F280562119FF93CE007095A2 /* LightSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F280561819FF93CE007095A2 /* LightSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F280564C19FF99F0007095A2 /* UI */,
+				F280563219FF9413007095A2 /* Config */,
+				F280561B19FF93CE007095A2 /* LightSDK.h */,
+				F280561919FF93CE007095A2 /* Supporting Files */,
+			);
+			path = LightSDK;
+			sourceTree = "<group>";
+		};
+		F280561919FF93CE007095A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F280561A19FF93CE007095A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F280562519FF93CE007095A2 /* LightSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				F280562819FF93CE007095A2 /* LightSDKTests.m */,
+				F280562619FF93CE007095A2 /* Supporting Files */,
+			);
+			path = LightSDKTests;
+			sourceTree = "<group>";
+		};
+		F280562619FF93CE007095A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F280562719FF93CE007095A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F280563219FF9413007095A2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F280563319FF9413007095A2 /* ABConfigManager.h */,
+				F280563419FF9413007095A2 /* ABConfigManager.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F280564C19FF99F0007095A2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F280565F19FF9A22007095A2 /* MBProgressHUD */,
+				F280564D19FF9A06007095A2 /* KxMenu */,
+				F280565019FF9A06007095A2 /* WTStatusBar */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F280564D19FF9A06007095A2 /* KxMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F280564E19FF9A06007095A2 /* KxMenu.h */,
+				F280564F19FF9A06007095A2 /* KxMenu.m */,
+			);
+			path = KxMenu;
+			sourceTree = "<group>";
+		};
+		F280565019FF9A06007095A2 /* WTStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				F280565119FF9A06007095A2 /* WTStatusBar.h */,
+				F280565219FF9A06007095A2 /* WTStatusBar.m */,
+				F280565319FF9A06007095A2 /* WTStatusView.h */,
+				F280565419FF9A06007095A2 /* WTStatusView.m */,
+				F280565519FF9A06007095A2 /* WTStatusWindow.h */,
+				F280565619FF9A06007095A2 /* WTStatusWindow.m */,
+			);
+			path = WTStatusBar;
+			sourceTree = "<group>";
+		};
+		F280565F19FF9A22007095A2 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F280566019FF9A22007095A2 /* MBProgressHUD.h */,
+				F280566119FF9A22007095A2 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F280561319FF93CE007095A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F280565719FF9A06007095A2 /* KxMenu.h in Headers */,
+				F280565D19FF9A06007095A2 /* WTStatusWindow.h in Headers */,
+				F280565B19FF9A06007095A2 /* WTStatusView.h in Headers */,
+				F280566219FF9A22007095A2 /* MBProgressHUD.h in Headers */,
+				F280561C19FF93CE007095A2 /* LightSDK.h in Headers */,
+				F280563519FF9413007095A2 /* ABConfigManager.h in Headers */,
+				F280565919FF9A06007095A2 /* WTStatusBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F280561519FF93CE007095A2 /* LightSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F280562C19FF93CE007095A2 /* Build configuration list for PBXNativeTarget "LightSDK" */;
+			buildPhases = (
+				C2D508247A60D22AFA3089D8 /* Check Pods Manifest.lock */,
+				F280561119FF93CE007095A2 /* Sources */,
+				F280561219FF93CE007095A2 /* Frameworks */,
+				F280561319FF93CE007095A2 /* Headers */,
+				F280561419FF93CE007095A2 /* Resources */,
+				796F8FAA08847E28B6A123E7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightSDK;
+			productName = LightSDK;
+			productReference = F280561619FF93CE007095A2 /* LightSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F280562019FF93CE007095A2 /* LightSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F280562F19FF93CE007095A2 /* Build configuration list for PBXNativeTarget "LightSDKTests" */;
+			buildPhases = (
+				F280561D19FF93CE007095A2 /* Sources */,
+				F280561E19FF93CE007095A2 /* Frameworks */,
+				F280561F19FF93CE007095A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F280562419FF93CE007095A2 /* PBXTargetDependency */,
+			);
+			name = LightSDKTests;
+			productName = LightSDKTests;
+			productReference = F280562119FF93CE007095A2 /* LightSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F280560D19FF93CE007095A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Alphabets;
+				TargetAttributes = {
+					F280561519FF93CE007095A2 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F280562019FF93CE007095A2 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = F280561019FF93CE007095A2 /* Build configuration list for PBXProject "LightSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F280560C19FF93CE007095A2;
+			productRefGroup = F280561719FF93CE007095A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F280561519FF93CE007095A2 /* LightSDK */,
+				F280562019FF93CE007095A2 /* LightSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F280561419FF93CE007095A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F280564B19FF969A007095A2 /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F280561F19FF93CE007095A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		796F8FAA08847E28B6A123E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightSDK/Pods-LightSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2D508247A60D22AFA3089D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F280561119FF93CE007095A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F280563619FF9413007095A2 /* ABConfigManager.m in Sources */,
+				F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */,
+				F280565819FF9A06007095A2 /* KxMenu.m in Sources */,
+				F280565A19FF9A06007095A2 /* WTStatusBar.m in Sources */,
+				F280565C19FF9A06007095A2 /* WTStatusView.m in Sources */,
+				F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F280561D19FF93CE007095A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F280562919FF93CE007095A2 /* LightSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F280562419FF93CE007095A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F280561519FF93CE007095A2 /* LightSDK */;
+			targetProxy = F280562319FF93CE007095A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F280562A19FF93CE007095A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F280562B19FF93CE007095A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F280562D19FF93CE007095A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DEFDA6FFE060A2FD74F114 /* Pods-LightSDK.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LightSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F280562E19FF93CE007095A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CB98C52C1E1C841FBB5178 /* Pods-LightSDK.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LightSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F280563019FF93CE007095A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F280563119FF93CE007095A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F280561019FF93CE007095A2 /* Build configuration list for PBXProject "LightSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F280562A19FF93CE007095A2 /* Debug */,
+				F280562B19FF93CE007095A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F280562C19FF93CE007095A2 /* Build configuration list for PBXNativeTarget "LightSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F280562D19FF93CE007095A2 /* Debug */,
+				F280562E19FF93CE007095A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F280562F19FF93CE007095A2 /* Build configuration list for PBXNativeTarget "LightSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F280563019FF93CE007095A2 /* Debug */,
+				F280563119FF93CE007095A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F280560D19FF93CE007095A2 /* Project object */;
+}
