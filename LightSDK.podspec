@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LightSDK"
-  s.version          = "0.0.2"
+  s.version          = "0.0.4"
   s.summary          = "iOS SDK for Light."
   s.description      = <<-DESC
                        iOS SDK for Light.
@@ -21,12 +21,16 @@ Pod::Spec.new do |s|
 
   s.source_files = 'LightSDK/LightSDK.h'
 
+  s.subspec 'Config' do |ss|
+    ss.source_files = 'LightSDK/Config/**/*.{h,m}'
+  end
+
   s.subspec 'Entity' do |ss|
-    ss.source_files = 'LightSDK/Logger/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Entity/**/*.{h,m}'
   end
 
   s.subspec 'Logger' do |ss|
-    ss.source_files = 'LightSDK/Util/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Logger/**/*.{h,m}'
   end
 
   s.subspec 'Storable' do |ss|
@@ -34,11 +38,11 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Util' do |ss|
-    ss.source_files = 'LightSDK/UI/**/*.{h,m}'
+    ss.source_files = 'LightSDK/Util/**/*.{h,m}'
   end
 
-  s.subspec 'Config' do |ss|
-    ss.source_files = 'LightSDK/Config/**/*.{h,m}'
+  s.subspec 'UI' do |ss|
+    ss.source_files = 'LightSDK/UI/**/*.{h,m}'
   end
 
   s.dependency 'AFNetworking',               '2.4.1'
