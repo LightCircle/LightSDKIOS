@@ -71,9 +71,9 @@ const CGFloat kArrowSize = 12.f;
         
         for (UIView *v in self.subviews) {
             if ([v isKindOfClass:[KxMenuView class]]
-                && [v respondsToSelector:@selector(dismissMenu:)]) {
+                && [v respondsToSelector:sel_registerName("someMethod")]) {
                 
-                [v performSelector:@selector(dismissMenu:) withObject:@(YES)];
+                [v performSelector:sel_registerName("someMethod") withObject:@(YES) afterDelay:0.0f];
             }
         }
     }
@@ -410,7 +410,7 @@ typedef enum {
     
     for (KxMenuItem *menuItem in _menuItems) {
 
-        const CGSize titleSize = [menuItem.title sizeWithFont:titleFont];
+        const CGSize titleSize = [menuItem.title sizeWithAttributes:@{NSFontAttributeName:titleFont}];
         const CGSize imageSize = menuItem.image.size;
 
         const CGFloat itemHeight = MAX(titleSize.height, imageSize.height) + kMarginY * 2;

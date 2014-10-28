@@ -112,7 +112,7 @@
 }
 
 - (void)verifyStatusViewLayout {
-    CGRect frame = _statusView.frame;
+    //CGRect frame = _statusView.frame;
     if (CGRectEqualToRect(_statusView.frame, CGRectZero)) {
         [self relayoutStatusView];
     }

@@ -89,7 +89,7 @@
 
 - (void)setStatusBarColor:(UIColor *)color
 {
-    CGFloat windowAlpha = ([[UIApplication sharedApplication] statusBarStyle] == UIStatusBarStyleBlackTranslucent) ? 0.5 : 1.0;
+    CGFloat windowAlpha = ([[UIApplication sharedApplication] statusBarStyle] == UIStatusBarStyleLightContent) ? 0.5 : 1.0;
     self.backgroundColor = [color colorWithAlphaComponent:windowAlpha];
 }
 

@@ -27,6 +27,18 @@
 		F280566619FF9BB0007095A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566419FF9B56007095A2 /* UIKit.framework */; };
 		F280566819FF9C03007095A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566719FF9C03007095A2 /* Foundation.framework */; };
 		F280566A19FF9C2E007095A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566919FF9C2E007095A2 /* CoreGraphics.framework */; };
+		F280567519FFA865007095A2 /* ABStorable.h in Headers */ = {isa = PBXBuildFile; fileRef = F280567319FFA865007095A2 /* ABStorable.h */; };
+		F280567619FFA865007095A2 /* ABStorable.m in Sources */ = {isa = PBXBuildFile; fileRef = F280567419FFA865007095A2 /* ABStorable.m */; };
+		F280567B19FFA8CC007095A2 /* ABHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = F280567819FFA8CC007095A2 /* ABHelper.h */; };
+		F280567C19FFA8CC007095A2 /* ABHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F280567919FFA8CC007095A2 /* ABHelper.m */; };
+		F280567D19FFA8CC007095A2 /* ABMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F280567A19FFA8CC007095A2 /* ABMacros.h */; };
+		F280568019FFA90A007095A2 /* NSString+ABUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F280567E19FFA90A007095A2 /* NSString+ABUtil.h */; };
+		F280568119FFA90A007095A2 /* NSString+ABUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F280567F19FFA90A007095A2 /* NSString+ABUtil.m */; };
+		F280568C19FFA9A5007095A2 /* ABLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F280568319FFA9A5007095A2 /* ABLogger.h */; };
+		F280568D19FFA9A5007095A2 /* ABLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F280568419FFA9A5007095A2 /* ABLogger.m */; };
+		F280569619FFA9E2007095A2 /* ABLoggerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F280569519FFA9E2007095A2 /* ABLoggerHeader.h */; };
+		F280569919FFAA55007095A2 /* ABLoggerFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F280569719FFAA55007095A2 /* ABLoggerFormatter.h */; };
+		F280569A19FFAA55007095A2 /* ABLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F280569819FFAA55007095A2 /* ABLoggerFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +77,18 @@
 		F280566419FF9B56007095A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F280566719FF9C03007095A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F280566919FF9C2E007095A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F280567319FFA865007095A2 /* ABStorable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStorable.h; sourceTree = "<group>"; };
+		F280567419FFA865007095A2 /* ABStorable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStorable.m; sourceTree = "<group>"; };
+		F280567819FFA8CC007095A2 /* ABHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABHelper.h; sourceTree = "<group>"; };
+		F280567919FFA8CC007095A2 /* ABHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABHelper.m; sourceTree = "<group>"; };
+		F280567A19FFA8CC007095A2 /* ABMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABMacros.h; sourceTree = "<group>"; };
+		F280567E19FFA90A007095A2 /* NSString+ABUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ABUtil.h"; sourceTree = "<group>"; };
+		F280567F19FFA90A007095A2 /* NSString+ABUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ABUtil.m"; sourceTree = "<group>"; };
+		F280568319FFA9A5007095A2 /* ABLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLogger.h; sourceTree = "<group>"; };
+		F280568419FFA9A5007095A2 /* ABLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLogger.m; sourceTree = "<group>"; };
+		F280569519FFA9E2007095A2 /* ABLoggerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoggerHeader.h; sourceTree = "<group>"; };
+		F280569719FFAA55007095A2 /* ABLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoggerFormatter.h; sourceTree = "<group>"; };
+		F280569819FFAA55007095A2 /* ABLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLoggerFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +158,9 @@
 		F280561819FF93CE007095A2 /* LightSDK */ = {
 			isa = PBXGroup;
 			children = (
+				F280568219FFA9A5007095A2 /* Logger */,
+				F280567719FFA8CC007095A2 /* Util */,
+				F280567219FFA865007095A2 /* Storable */,
 				F280564C19FF99F0007095A2 /* UI */,
 				F280563219FF9413007095A2 /* Config */,
 				F280561B19FF93CE007095A2 /* LightSDK.h */,
@@ -217,6 +244,39 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		F280567219FFA865007095A2 /* Storable */ = {
+			isa = PBXGroup;
+			children = (
+				F280567319FFA865007095A2 /* ABStorable.h */,
+				F280567419FFA865007095A2 /* ABStorable.m */,
+			);
+			path = Storable;
+			sourceTree = "<group>";
+		};
+		F280567719FFA8CC007095A2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F280567819FFA8CC007095A2 /* ABHelper.h */,
+				F280567919FFA8CC007095A2 /* ABHelper.m */,
+				F280567A19FFA8CC007095A2 /* ABMacros.h */,
+				F280567E19FFA90A007095A2 /* NSString+ABUtil.h */,
+				F280567F19FFA90A007095A2 /* NSString+ABUtil.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F280568219FFA9A5007095A2 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				F280568319FFA9A5007095A2 /* ABLogger.h */,
+				F280568419FFA9A5007095A2 /* ABLogger.m */,
+				F280569519FFA9E2007095A2 /* ABLoggerHeader.h */,
+				F280569719FFAA55007095A2 /* ABLoggerFormatter.h */,
+				F280569819FFAA55007095A2 /* ABLoggerFormatter.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -224,13 +284,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F280569919FFAA55007095A2 /* ABLoggerFormatter.h in Headers */,
 				F280565719FF9A06007095A2 /* KxMenu.h in Headers */,
+				F280568C19FFA9A5007095A2 /* ABLogger.h in Headers */,
 				F280565D19FF9A06007095A2 /* WTStatusWindow.h in Headers */,
+				F280567D19FFA8CC007095A2 /* ABMacros.h in Headers */,
+				F280567519FFA865007095A2 /* ABStorable.h in Headers */,
 				F280565B19FF9A06007095A2 /* WTStatusView.h in Headers */,
 				F280566219FF9A22007095A2 /* MBProgressHUD.h in Headers */,
 				F280561C19FF93CE007095A2 /* LightSDK.h in Headers */,
 				F280563519FF9413007095A2 /* ABConfigManager.h in Headers */,
 				F280565919FF9A06007095A2 /* WTStatusBar.h in Headers */,
+				F280568019FFA90A007095A2 /* NSString+ABUtil.h in Headers */,
+				F280569619FFA9E2007095A2 /* ABLoggerHeader.h in Headers */,
+				F280567B19FFA8CC007095A2 /* ABHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,11 +433,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F280569A19FFAA55007095A2 /* ABLoggerFormatter.m in Sources */,
+				F280567C19FFA8CC007095A2 /* ABHelper.m in Sources */,
+				F280567619FFA865007095A2 /* ABStorable.m in Sources */,
 				F280563619FF9413007095A2 /* ABConfigManager.m in Sources */,
 				F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */,
 				F280565819FF9A06007095A2 /* KxMenu.m in Sources */,
 				F280565A19FF9A06007095A2 /* WTStatusBar.m in Sources */,
+				F280568119FFA90A007095A2 /* NSString+ABUtil.m in Sources */,
 				F280565C19FF9A06007095A2 /* WTStatusView.m in Sources */,
+				F280568D19FFA9A5007095A2 /* ABLogger.m in Sources */,
 				F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
