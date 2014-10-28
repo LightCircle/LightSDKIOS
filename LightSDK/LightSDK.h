@@ -6,16 +6,34 @@
 //  Copyright (c) 2014年 Alphabets. All rights reserved.
 //
 
+// Thirdparty
 #import <AFHTTPSessionManager.h>
 #import <UIImageView+WebCache.h>
 #import <JSONModel.h>
 
-#import "ABConfigManager.h"
-#import "ABHelper.h"
-#import "ABStorable.h"
-#import "ABLogger.h"
-#import "NSString+ABUtil.h"
+// Entities
+#import "ABAPIUrl.h"
 #import "ABEntities.h"
+
+// Logger
+#import "ABLogger.h"
+
+// Util
+#import "ABHelper.h"
+#import "ABDefine.h"
+#import "ABMacros.h"
+#import "NSString+ABUtil.h"
+
+// Storable
+#import "ABStorable.h"
+
+// UI
+#import "MBProgressHUD.h"
+#import "KxMenu.h"
+#import "WTStatusBar.h"
+
+// Config
+#import "ABConfigManager.h"
 
 //! Project version number for LightSDK.
 FOUNDATION_EXPORT double LightSDKVersionNumber;
@@ -24,21 +42,3 @@ FOUNDATION_EXPORT double LightSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char LightSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LightSDK/PublicHeader.h>
-
-
-#ifndef _ABHeader_h
-#define _ABHeader_h
-
-#define kNotificationNameNeedsLogin @"NeedsLogin"
-
-#define kHTTPHeaderCookieName       @"Set-Cookie"
-#define kHTTPHeaderCsrftokenName    @"csrftoken"
-
-#define kConfigManagerUserID        @"cn.alphabets.userid"
-#define kConfigManagerDefaultUserID @"cn.alphabets.defaultuserid"
-#define kConfigManagerCookie        @"cn.alphabets.cookie"
-#define kConfigManagerCsrfToken     @"cn.alphabets.csrftoken"
-#define kConfigManagerServerName    @"ServerAddress"
-#define kConfigManagerServerPort    @"ServerPort"
-
-#endif
