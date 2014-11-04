@@ -50,3 +50,11 @@
 @property(retain, nonatomic) NSArray        <Tag> *items;
 @end
 
+@protocol Options
+@end
+@interface Options : JSONModel
+@property(retain, nonatomic) NSDictionary   <Optional> *category;
+@property(retain, nonatomic) NSDictionary   <Optional> *group;
+@property(retain, nonatomic) NSDictionary   <Optional> *user;
+@property(retain, nonatomic) NSDictionary   <Optional> *file;
+@end
