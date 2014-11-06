@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Editor View Controller-->
+        <scene sceneID="KjR-5b-pLN">
+            <objects>
+                <viewController storyboardIdentifier="EditorViewController" id="oaF-NR-OsC" customClass="EditorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p7z-VY-dAZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XXf-US-9NU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3y8-Yf-Pdp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hw2-ro-dr4">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xPw-te-JhH"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="取消" id="jt5-pK-9H3">
+                                        <connections>
+                                            <action selector="onCancelTouched:" destination="oaF-NR-OsC" id="34Y-Wy-t7s"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="HR4-iO-dhP"/>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xPw-te-JhH"/>
+                                    </mask>
+                                </variation>
+                            </toolbar>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pTU-oW-e7J">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditorViewCell" id="y1a-72-PuA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y1a-72-PuA" id="tIB-Hb-fhq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oaF-NR-OsC" id="t6R-7H-Ghl"/>
+                                    <outlet property="delegate" destination="oaF-NR-OsC" id="xOV-vH-ujf"/>
+                                </connections>
+                            </tableView>
+                            <datePicker hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wye-Tl-ane">
+                                <rect key="frame" x="0.0" y="84" width="600" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="mqM-Mr-n2a"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="436162901.01089603">
+                                    <!--2014-10-28 04:21:41 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="410245200">
+                                    <!--2014-01-01 05:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="zh_CN"/>
+                            </datePicker>
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Editbox" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="PRY-F7-Bms">
+                                <rect key="frame" x="0.0" y="84" width="600" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="wSa-Pv-7va"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="onEditEnd:" destination="oaF-NR-OsC" eventType="editingDidEndOnExit" id="eEL-Ex-8IP"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hw2-ro-dr4" firstAttribute="top" secondItem="p7z-VY-dAZ" secondAttribute="bottom" id="4jU-m8-tbD"/>
+                            <constraint firstAttribute="trailing" secondItem="pTU-oW-e7J" secondAttribute="trailing" id="9Hc-zm-SLF"/>
+                            <constraint firstAttribute="trailing" secondItem="hw2-ro-dr4" secondAttribute="trailing" id="E6W-sa-bnS"/>
+                            <constraint firstAttribute="trailing" secondItem="Wye-Tl-ane" secondAttribute="trailing" id="IRD-O2-DfH"/>
+                            <constraint firstItem="hw2-ro-dr4" firstAttribute="leading" secondItem="3y8-Yf-Pdp" secondAttribute="leading" id="K37-A9-Sod"/>
+                            <constraint firstItem="Wye-Tl-ane" firstAttribute="leading" secondItem="3y8-Yf-Pdp" secondAttribute="leading" id="Sw6-9S-Mho"/>
+                            <constraint firstItem="Wye-Tl-ane" firstAttribute="top" secondItem="hw2-ro-dr4" secondAttribute="bottom" constant="20" id="VwF-uU-1AA"/>
+                            <constraint firstItem="pTU-oW-e7J" firstAttribute="top" secondItem="hw2-ro-dr4" secondAttribute="bottom" id="ftD-ft-Ale"/>
+                            <constraint firstItem="pTU-oW-e7J" firstAttribute="leading" secondItem="3y8-Yf-Pdp" secondAttribute="leading" id="lDJ-af-BEm"/>
+                            <constraint firstItem="XXf-US-9NU" firstAttribute="top" secondItem="pTU-oW-e7J" secondAttribute="bottom" id="lbh-Xq-VQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="PRY-F7-Bms" secondAttribute="trailing" id="rt2-Sm-wjZ"/>
+                            <constraint firstItem="PRY-F7-Bms" firstAttribute="top" secondItem="hw2-ro-dr4" secondAttribute="bottom" constant="20" id="uY5-yw-rs2"/>
+                            <constraint firstItem="PRY-F7-Bms" firstAttribute="leading" secondItem="3y8-Yf-Pdp" secondAttribute="leading" id="y8L-J2-MKT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selDateTime" destination="Wye-Tl-ane" id="gzc-aD-vET"/>
+                        <outlet property="tableView" destination="pTU-oW-e7J" id="qOM-Ga-Lta"/>
+                        <outlet property="txtEdit" destination="PRY-F7-Bms" id="Q4B-Xe-D6M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWO-fi-CfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="383"/>
+        </scene>
+    </scenes>
+</document>

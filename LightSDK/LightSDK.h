@@ -32,6 +32,9 @@
 #import "MBProgressHUD.h"
 #import "KxMenu.h"
 #import "WTStatusBar.h"
+#import "GuideViewController.h"
+#import "LoginViewController.h"
+#import "EditorViewController.h"
 
 // Config
 #import "ABConfigManager.h"
