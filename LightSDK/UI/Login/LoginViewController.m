@@ -23,7 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.btnLogin.backgroundColor = self.color;
     self.imgLogo.image = self.logo;
+    [self.txtUserID becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,7 +36,7 @@
 
 #pragma mark - Custom Functions
 
-+ (LoginViewController *)loadFromNib
++ (LoginViewController *)loadController
 {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
     return [sb instantiateViewControllerWithIdentifier:@"LoginViewController"];

@@ -25,6 +25,8 @@ typedef NS_ENUM(NSInteger, LMEditorType) {
 @property (weak, nonatomic) IBOutlet UIDatePicker *selDateTime;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
++ (EditorViewController *)loadController;
+
 // 多选时，选择项目
 @property (nonatomic) NSArray *items;
 

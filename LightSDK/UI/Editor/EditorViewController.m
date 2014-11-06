@@ -14,6 +14,12 @@
 
 @implementation EditorViewController
 
++ (EditorViewController *)loadController
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Editor" bundle:nil];
+    return [sb instantiateViewControllerWithIdentifier:@"EditorViewController"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

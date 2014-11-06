@@ -16,10 +16,12 @@ typedef void (^LoginViewControllerComplet)();
 @property (weak, nonatomic) IBOutlet UITextField *txtUserID;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 - (IBAction)onLoginClicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 
 @property (strong, nonatomic) LoginViewControllerComplet onComplet;
 @property (strong, nonatomic) UIImage *logo;
-+ (LoginViewController *)loadFromNib;
+@property (strong, nonatomic) UIColor *color;
++ (LoginViewController *)loadController;
 + (void)logout;
 
 @end

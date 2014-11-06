@@ -42,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="30" id="STr-lW-ulb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-ZE-9oK">
                                 <rect key="frame" x="56" y="156" width="528" height="30"/>
@@ -51,7 +51,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Sou-xL-e6X"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SEI-7h-gPi">
                                 <rect key="frame" x="16" y="50" width="568" height="60"/>
@@ -79,7 +79,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-oR-L8p">
-                                <rect key="frame" x="16" y="202" width="568" height="30"/>
+                                <rect key="frame" x="16" y="194" width="568" height="30"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.41568627450000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="wMn-hQ-Qnl"/>
@@ -102,7 +102,7 @@
                             <constraint firstItem="ejq-Yy-nup" firstAttribute="top" secondItem="SEI-7h-gPi" secondAttribute="bottom" constant="8" id="E4v-Qc-EkO"/>
                             <constraint firstItem="8SZ-4k-sun" firstAttribute="leading" secondItem="b0L-G6-pxw" secondAttribute="leading" constant="16" id="FE5-xw-o3c"/>
                             <constraint firstItem="SEI-7h-gPi" firstAttribute="top" secondItem="m3Z-g3-yW9" secondAttribute="bottom" constant="30" id="GuM-7i-YWN"/>
-                            <constraint firstItem="fpu-oR-L8p" firstAttribute="top" secondItem="uQd-LT-y8j" secondAttribute="bottom" constant="16" id="YVx-h5-bdv"/>
+                            <constraint firstItem="fpu-oR-L8p" firstAttribute="top" secondItem="uQd-LT-y8j" secondAttribute="bottom" constant="8" id="YVx-h5-bdv"/>
                             <constraint firstItem="ejq-Yy-nup" firstAttribute="leading" secondItem="8SZ-4k-sun" secondAttribute="trailing" id="bxW-yV-rNn"/>
                             <constraint firstAttribute="trailing" secondItem="SEI-7h-gPi" secondAttribute="trailing" constant="16" id="fWt-eu-smd"/>
                             <constraint firstItem="8SZ-4k-sun" firstAttribute="top" secondItem="SEI-7h-gPi" secondAttribute="bottom" constant="8" id="foD-Bv-p3u"/>
@@ -114,6 +114,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnLogin" destination="fpu-oR-L8p" id="Xb6-mX-Lfy"/>
                         <outlet property="imgLogo" destination="SEI-7h-gPi" id="pT6-Gt-xdI"/>
                         <outlet property="txtPassword" destination="FbU-ZE-9oK" id="Jf2-Jp-3Fi"/>
                         <outlet property="txtUserID" destination="ejq-Yy-nup" id="6Zk-x4-r2K"/>

@@ -94,6 +94,10 @@
 
 - (IBAction)onFinished:(id)sender
 {
+    GuideViewController* viewController = ((GuideViewController*)self.navigationController);
+    if (viewController.onComplet != nil) {
+        viewController.onComplet();
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

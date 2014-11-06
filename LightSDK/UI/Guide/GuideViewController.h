@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^GuideViewControllerComplet)();
+
 @interface GuideViewController : UINavigationController
 
 @property (strong, nonatomic) NSArray *images;
 @property (strong, nonatomic) NSArray *titles;
 @property (strong, nonatomic) NSArray *subtitles;
 
+@property (strong, nonatomic) GuideViewControllerComplet onComplet;
 + (GuideViewController *)loadController:(NSArray *)images titles:(NSArray *)titles subtitles:(NSArray *)subtitles;
 
 @end
