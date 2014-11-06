@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "LightSDK"
-  s.version          = "0.0.4"
+  s.version          = "0.0.6"
   s.summary          = "iOS SDK for Light."
   s.description      = <<-DESC
                        iOS SDK for Light.
@@ -43,6 +43,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'UI' do |ss|
     ss.source_files = 'LightSDK/UI/**/*.{h,m}'
+    ss.resources    = 'LightSDK/UI/**/*.{png,storyboard}'
   end
 
   s.dependency 'AFNetworking',               '2.4.1'

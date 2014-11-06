@@ -53,6 +53,10 @@
 		F2D634CE1A0AFF0800DDC5C3 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D634CB1A0AFF0800DDC5C3 /* Guide.storyboard */; };
 		F2D634CF1A0AFF0800DDC5C3 /* GuideViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D634CC1A0AFF0800DDC5C3 /* GuideViewController.h */; };
 		F2D634D01A0AFF0800DDC5C3 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D634CD1A0AFF0800DDC5C3 /* GuideViewController.m */; };
+		F2D634DC1A0B3BDF00DDC5C3 /* LoginLock.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634D81A0B3BDF00DDC5C3 /* LoginLock.png */; };
+		F2D634DD1A0B3BDF00DDC5C3 /* LoginLock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634D91A0B3BDF00DDC5C3 /* LoginLock@2x.png */; };
+		F2D634DE1A0B3BDF00DDC5C3 /* LoginUser.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634DA1A0B3BDF00DDC5C3 /* LoginUser.png */; };
+		F2D634DF1A0B3BDF00DDC5C3 /* LoginUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634DB1A0B3BDF00DDC5C3 /* LoginUser@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +121,10 @@
 		F2D634CB1A0AFF0800DDC5C3 /* Guide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
 		F2D634CC1A0AFF0800DDC5C3 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		F2D634CD1A0AFF0800DDC5C3 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		F2D634D81A0B3BDF00DDC5C3 /* LoginLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginLock.png; sourceTree = "<group>"; };
+		F2D634D91A0B3BDF00DDC5C3 /* LoginLock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginLock@2x.png"; sourceTree = "<group>"; };
+		F2D634DA1A0B3BDF00DDC5C3 /* LoginUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginUser.png; sourceTree = "<group>"; };
+		F2D634DB1A0B3BDF00DDC5C3 /* LoginUser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginUser@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +332,10 @@
 		F2D634BC1A0AFE5F00DDC5C3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F2D634D81A0B3BDF00DDC5C3 /* LoginLock.png */,
+				F2D634D91A0B3BDF00DDC5C3 /* LoginLock@2x.png */,
+				F2D634DA1A0B3BDF00DDC5C3 /* LoginUser.png */,
+				F2D634DB1A0B3BDF00DDC5C3 /* LoginUser@2x.png */,
 				F2D634BD1A0AFE5F00DDC5C3 /* Login.storyboard */,
 				F2D634BE1A0AFE5F00DDC5C3 /* LoginViewController.h */,
 				F2D634BF1A0AFE5F00DDC5C3 /* LoginViewController.m */,
@@ -462,10 +474,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D634DE1A0B3BDF00DDC5C3 /* LoginUser.png in Resources */,
 				F2D634CE1A0AFF0800DDC5C3 /* Guide.storyboard in Resources */,
+				F2D634DD1A0B3BDF00DDC5C3 /* LoginLock@2x.png in Resources */,
 				F280569C19FFB2A9007095A2 /* LightSDK.podspec in Resources */,
+				F2D634DF1A0B3BDF00DDC5C3 /* LoginUser@2x.png in Resources */,
 				F280564B19FF969A007095A2 /* Podfile in Resources */,
 				F2D634C41A0AFE5F00DDC5C3 /* Login.storyboard in Resources */,
+				F2D634DC1A0B3BDF00DDC5C3 /* LoginLock.png in Resources */,
 				F2D634C71A0AFE5F00DDC5C3 /* Editor.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
