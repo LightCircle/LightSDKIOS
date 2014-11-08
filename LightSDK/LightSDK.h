@@ -35,6 +35,7 @@
 #import "GuideViewController.h"
 #import "LoginViewController.h"
 #import "EditorViewController.h"
+#import "QRCodeViewController.h"
 
 // Config
 #import "ABConfigManager.h"
