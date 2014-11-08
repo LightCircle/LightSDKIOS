@@ -50,6 +50,7 @@
 @property(retain, nonatomic) NSArray        <Tag> *items;
 @end
 
+
 @protocol Options
 @end
 @interface Options : JSONModel
@@ -57,4 +58,22 @@
 @property(retain, nonatomic) NSDictionary   <Optional> *group;
 @property(retain, nonatomic) NSDictionary   <Optional> *user;
 @property(retain, nonatomic) NSDictionary   <Optional> *file;
+@end
+
+
+@protocol Device
+@end
+@interface Device : LightModel
+@property(retain, nonatomic) NSString       *token;
+@property(retain, nonatomic) NSString       <Optional> *qrcode;
+@property(retain, nonatomic) NSString       <Optional> *identifier;
+@property(retain, nonatomic) NSString       <Optional> *type;
+@property(retain, nonatomic) NSString       <Optional> *user;
+@property(retain, nonatomic) NSDate         <Optional> *active;
+@property(retain, nonatomic) NSString       <Optional> *status;
+@property(retain, nonatomic) NSString       <Optional> *description_;
+@property(retain, nonatomic) NSDictionary   <Optional> *extend;
+@end
+@interface DeviceList : JSONModel
+@property(retain, nonatomic) NSArray        <Device> *items;
 @end

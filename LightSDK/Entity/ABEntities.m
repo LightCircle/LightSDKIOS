@@ -18,3 +18,13 @@
 
 @implementation Options
 @end
+
+@implementation Device
++ (JSONKeyMapper *)keyMapper
+{
+    return [[JSONKeyMapper alloc] initWithDictionary:@{@"description": @"description_"}];
+}
+@end
+
+@implementation DeviceList
+@end
