@@ -57,6 +57,12 @@
 		F2D634DD1A0B3BDF00DDC5C3 /* LoginLock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634D91A0B3BDF00DDC5C3 /* LoginLock@2x.png */; };
 		F2D634DE1A0B3BDF00DDC5C3 /* LoginUser.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634DA1A0B3BDF00DDC5C3 /* LoginUser.png */; };
 		F2D634DF1A0B3BDF00DDC5C3 /* LoginUser@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634DB1A0B3BDF00DDC5C3 /* LoginUser@2x.png */; };
+		F2D635041A0E091C00DDC5C3 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D634FE1A0E091C00DDC5C3 /* QRCode.storyboard */; };
+		F2D635051A0E091C00DDC5C3 /* QRCodeArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D634FF1A0E091C00DDC5C3 /* QRCodeArrow.png */; };
+		F2D635061A0E091C00DDC5C3 /* QRCodeArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2D635001A0E091C00DDC5C3 /* QRCodeArrow@2x.png */; };
+		F2D635071A0E091C00DDC5C3 /* QRCodeBbeep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2D635011A0E091C00DDC5C3 /* QRCodeBbeep.mp3 */; };
+		F2D635081A0E091C00DDC5C3 /* QRCodeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D635021A0E091C00DDC5C3 /* QRCodeViewController.h */; };
+		F2D635091A0E091C00DDC5C3 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D635031A0E091C00DDC5C3 /* QRCodeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +131,12 @@
 		F2D634D91A0B3BDF00DDC5C3 /* LoginLock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginLock@2x.png"; sourceTree = "<group>"; };
 		F2D634DA1A0B3BDF00DDC5C3 /* LoginUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginUser.png; sourceTree = "<group>"; };
 		F2D634DB1A0B3BDF00DDC5C3 /* LoginUser@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoginUser@2x.png"; sourceTree = "<group>"; };
+		F2D634FE1A0E091C00DDC5C3 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		F2D634FF1A0E091C00DDC5C3 /* QRCodeArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QRCodeArrow.png; sourceTree = "<group>"; };
+		F2D635001A0E091C00DDC5C3 /* QRCodeArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeArrow@2x.png"; sourceTree = "<group>"; };
+		F2D635011A0E091C00DDC5C3 /* QRCodeBbeep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = QRCodeBbeep.mp3; sourceTree = "<group>"; };
+		F2D635021A0E091C00DDC5C3 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		F2D635031A0E091C00DDC5C3 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +256,7 @@
 		F280564C19FF99F0007095A2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F2D634FD1A0E091C00DDC5C3 /* QRCode */,
 				F2D634CA1A0AFF0800DDC5C3 /* Guide */,
 				F2D634BC1A0AFE5F00DDC5C3 /* Login */,
 				F2D634C01A0AFE5F00DDC5C3 /* Editor */,
@@ -363,6 +376,19 @@
 			path = Guide;
 			sourceTree = "<group>";
 		};
+		F2D634FD1A0E091C00DDC5C3 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				F2D634FE1A0E091C00DDC5C3 /* QRCode.storyboard */,
+				F2D634FF1A0E091C00DDC5C3 /* QRCodeArrow.png */,
+				F2D635001A0E091C00DDC5C3 /* QRCodeArrow@2x.png */,
+				F2D635011A0E091C00DDC5C3 /* QRCodeBbeep.mp3 */,
+				F2D635021A0E091C00DDC5C3 /* QRCodeViewController.h */,
+				F2D635031A0E091C00DDC5C3 /* QRCodeViewController.m */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -389,6 +415,7 @@
 				F28056B219FFCEAF007095A2 /* ABAPIUrl.h in Headers */,
 				F280568019FFA90A007095A2 /* NSString+ABUtil.h in Headers */,
 				F280569619FFA9E2007095A2 /* ABLoggerHeader.h in Headers */,
+				F2D635081A0E091C00DDC5C3 /* QRCodeViewController.h in Headers */,
 				F280567B19FFA8CC007095A2 /* ABHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,8 +505,12 @@
 				F2D634CE1A0AFF0800DDC5C3 /* Guide.storyboard in Resources */,
 				F2D634DD1A0B3BDF00DDC5C3 /* LoginLock@2x.png in Resources */,
 				F280569C19FFB2A9007095A2 /* LightSDK.podspec in Resources */,
+				F2D635061A0E091C00DDC5C3 /* QRCodeArrow@2x.png in Resources */,
+				F2D635041A0E091C00DDC5C3 /* QRCode.storyboard in Resources */,
 				F2D634DF1A0B3BDF00DDC5C3 /* LoginUser@2x.png in Resources */,
 				F280564B19FF969A007095A2 /* Podfile in Resources */,
+				F2D635051A0E091C00DDC5C3 /* QRCodeArrow.png in Resources */,
+				F2D635071A0E091C00DDC5C3 /* QRCodeBbeep.mp3 in Resources */,
 				F2D634C41A0AFE5F00DDC5C3 /* Login.storyboard in Resources */,
 				F2D634DC1A0B3BDF00DDC5C3 /* LoginLock.png in Resources */,
 				F2D634C71A0AFE5F00DDC5C3 /* Editor.storyboard in Resources */,
@@ -547,6 +578,7 @@
 				F280568D19FFA9A5007095A2 /* ABLogger.m in Sources */,
 				F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */,
 				F28056B419FFCEAF007095A2 /* ABEntities.m in Sources */,
+				F2D635091A0E091C00DDC5C3 /* QRCodeViewController.m in Sources */,
 				F2D634C91A0AFE5F00DDC5C3 /* EditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
