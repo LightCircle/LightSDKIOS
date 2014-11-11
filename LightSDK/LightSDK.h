@@ -14,31 +14,33 @@
 
 // Entities
 #import "ABAPIUrl.h"
-#import "ABEntities.h"
+#import "ABEntities.h"                      // LigitModel对象定义
 
 // Logger
-#import "ABLogger.h"
+#import "ABLogger.h"                        // 日志
 
 // Util
-#import "ABHelper.h"
-#import "ABDefine.h"
-#import "ABMacros.h"
-#import "NSString+ABUtil.h"
+#import "ABHelper.h"                        // 工具包
+#import "ABDefine.h"                        // 常量定义
+#import "ABMacros.h"                        // 宏定义
+#import "NSString+ABUtil.h"                 // 扩展文字处理
 
 // Storable
-#import "ABStorable.h"
-
-// UI
-#import "MBProgressHUD.h"
-#import "KxMenu.h"
-#import "WTStatusBar.h"
-#import "GuideViewController.h"
-#import "LoginViewController.h"
-#import "EditorViewController.h"
-#import "QRCodeViewController.h"
+#import "ABStorable.h"                      // 缓存
 
 // Config
-#import "ABConfigManager.h"
+#import "ABConfigManager.h"                 // 设定文件管理
+
+// UI
+#import "GuideViewController.h"             // 应用向导
+#import "LoginViewController.h"             // 登陆
+#import "EditorViewController.h"            // 通用编辑
+#import "QRCodeViewController.h"            // QRCode识别
+#import "MBProgressHUD.h"                   // （第三方包）等待
+#import "KxMenu.h"                          // （第三方包）单出菜单
+#import "WTStatusBar.h"                     // （第三方包）工具栏显示进度
+#import "MSDynamicsDrawerStyler.h"          // （第三方包）侧面菜单风格
+#import "MSDynamicsDrawerViewController.h"  // （第三方包）侧面菜单
 
 //! Project version number for LightSDK.
 FOUNDATION_EXPORT double LightSDKVersionNumber;

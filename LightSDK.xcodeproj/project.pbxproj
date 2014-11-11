@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		33AA9BA5FCBFDF266B96BC4F /* libPods-LightSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8400C96740B84AFBF9FFFB75 /* libPods-LightSDK.a */; };
+		F2189D3E1A1242370038D4D1 /* MSDynamicsDrawerStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = F2189D391A1242370038D4D1 /* MSDynamicsDrawerStyler.h */; };
+		F2189D3F1A1242370038D4D1 /* MSDynamicsDrawerStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = F2189D3A1A1242370038D4D1 /* MSDynamicsDrawerStyler.m */; };
+		F2189D411A1242370038D4D1 /* MSDynamicsDrawerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2189D3C1A1242370038D4D1 /* MSDynamicsDrawerViewController.h */; };
+		F2189D421A1242370038D4D1 /* MSDynamicsDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2189D3D1A1242370038D4D1 /* MSDynamicsDrawerViewController.m */; };
 		F280561C19FF93CE007095A2 /* LightSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F280561B19FF93CE007095A2 /* LightSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F280562219FF93CE007095A2 /* LightSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280561619FF93CE007095A2 /* LightSDK.framework */; };
 		F280562919FF93CE007095A2 /* LightSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F280562819FF93CE007095A2 /* LightSDKTests.m */; };
@@ -79,6 +83,10 @@
 		70DEFDA6FFE060A2FD74F114 /* Pods-LightSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightSDK/Pods-LightSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		8400C96740B84AFBF9FFFB75 /* libPods-LightSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LightSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86CB98C52C1E1C841FBB5178 /* Pods-LightSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightSDK/Pods-LightSDK.release.xcconfig"; sourceTree = "<group>"; };
+		F2189D391A1242370038D4D1 /* MSDynamicsDrawerStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerStyler.h; sourceTree = "<group>"; };
+		F2189D3A1A1242370038D4D1 /* MSDynamicsDrawerStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerStyler.m; sourceTree = "<group>"; };
+		F2189D3C1A1242370038D4D1 /* MSDynamicsDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDynamicsDrawerViewController.h; sourceTree = "<group>"; };
+		F2189D3D1A1242370038D4D1 /* MSDynamicsDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDynamicsDrawerViewController.m; sourceTree = "<group>"; };
 		F280561619FF93CE007095A2 /* LightSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LightSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F280561A19FF93CE007095A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F280561B19FF93CE007095A2 /* LightSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightSDK.h; sourceTree = "<group>"; };
@@ -182,6 +190,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F2189D381A1242370038D4D1 /* MSDynamicsDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F2189D391A1242370038D4D1 /* MSDynamicsDrawerStyler.h */,
+				F2189D3A1A1242370038D4D1 /* MSDynamicsDrawerStyler.m */,
+				F2189D3C1A1242370038D4D1 /* MSDynamicsDrawerViewController.h */,
+				F2189D3D1A1242370038D4D1 /* MSDynamicsDrawerViewController.m */,
+			);
+			path = MSDynamicsDrawerViewController;
+			sourceTree = "<group>";
+		};
 		F280560C19FF93CE007095A2 = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +275,7 @@
 		F280564C19FF99F0007095A2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F2189D381A1242370038D4D1 /* MSDynamicsDrawerViewController */,
 				F2D634FD1A0E091C00DDC5C3 /* QRCode */,
 				F2D634CA1A0AFF0800DDC5C3 /* Guide */,
 				F2D634BC1A0AFE5F00DDC5C3 /* Login */,
@@ -396,6 +416,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2189D3E1A1242370038D4D1 /* MSDynamicsDrawerStyler.h in Headers */,
 				F280569919FFAA55007095A2 /* ABLoggerFormatter.h in Headers */,
 				F280565719FF9A06007095A2 /* KxMenu.h in Headers */,
 				F280568C19FFA9A5007095A2 /* ABLogger.h in Headers */,
@@ -406,6 +427,7 @@
 				F280567D19FFA8CC007095A2 /* ABMacros.h in Headers */,
 				F280567519FFA865007095A2 /* ABStorable.h in Headers */,
 				F280565B19FF9A06007095A2 /* WTStatusView.h in Headers */,
+				F2189D411A1242370038D4D1 /* MSDynamicsDrawerViewController.h in Headers */,
 				F280566219FF9A22007095A2 /* MBProgressHUD.h in Headers */,
 				F280561C19FF93CE007095A2 /* LightSDK.h in Headers */,
 				F2D634CF1A0AFF0800DDC5C3 /* GuideViewController.h in Headers */,
@@ -568,6 +590,7 @@
 				F280567C19FFA8CC007095A2 /* ABHelper.m in Sources */,
 				F2D634D01A0AFF0800DDC5C3 /* GuideViewController.m in Sources */,
 				F2D634C61A0AFE5F00DDC5C3 /* LoginViewController.m in Sources */,
+				F2189D3F1A1242370038D4D1 /* MSDynamicsDrawerStyler.m in Sources */,
 				F280567619FFA865007095A2 /* ABStorable.m in Sources */,
 				F280563619FF9413007095A2 /* ABConfigManager.m in Sources */,
 				F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */,
@@ -579,6 +602,7 @@
 				F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */,
 				F28056B419FFCEAF007095A2 /* ABEntities.m in Sources */,
 				F2D635091A0E091C00DDC5C3 /* QRCodeViewController.m in Sources */,
+				F2189D421A1242370038D4D1 /* MSDynamicsDrawerViewController.m in Sources */,
 				F2D634C91A0AFE5F00DDC5C3 /* EditorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
