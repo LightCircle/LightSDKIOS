@@ -18,6 +18,7 @@
 #define kConfigManagerDefaultUserID @"cn.alphabets.defaultuserid"
 #define kConfigManagerCookie        @"cn.alphabets.cookie"
 #define kConfigManagerCsrfToken     @"cn.alphabets.csrftoken"
+#define kConfigManagerDeviceToken   @"cn.alphabets.devicetoken"
 #define kConfigManagerServerName    @"ServerAddress"
 #define kConfigManagerServerPort    @"ServerPort"
 

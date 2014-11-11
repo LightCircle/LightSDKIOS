@@ -67,6 +67,7 @@
 @property(retain, nonatomic) NSString       *token;
 @property(retain, nonatomic) NSString       <Optional> *qrcode;
 @property(retain, nonatomic) NSString       <Optional> *identifier;
+@property(retain, nonatomic) NSString       <Optional> *pushToken;
 @property(retain, nonatomic) NSString       <Optional> *type;
 @property(retain, nonatomic) NSString       <Optional> *user;
 @property(retain, nonatomic) NSDate         <Optional> *active;
