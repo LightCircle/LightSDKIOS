@@ -28,6 +28,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="HR4-iO-dhP"/>
+                                    <barButtonItem title="确定" id="RIT-kh-8Mk">
+                                        <connections>
+                                            <action selector="onOKTouched:" destination="oaF-NR-OsC" id="vfa-qZ-3hh"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="default">
                                     <mask key="constraints">

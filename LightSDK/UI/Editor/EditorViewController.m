@@ -26,6 +26,7 @@
     
     // 文本编辑
     if (self.type == LEEditorText || self.type == LEEditorNumber) {
+        [self.navigationItem setRightBarButtonItems:nil animated:YES];
         self.txtEdit.hidden = NO;
 
         // 设定光标
@@ -49,11 +50,16 @@
     // 日期选择
     if (self.type == LEEditorDate) {
         self.selDateTime.hidden = NO;
-        [self.selDateTime setDate:self.defaults];
+        if (self.defaults == nil) {
+            [self.selDateTime setDate:[NSDate new]];
+        } else {
+            [self.selDateTime setDate:self.defaults];
+        }
     }
     
     // 选择
     if (self.type == LEEditorOption) {
+        [self.navigationItem setRightBarButtonItems:nil animated:YES];
         self.tableView.hidden = NO;
         self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     }
@@ -72,7 +78,17 @@
 
 - (IBAction)onEditEnd:(id)sender
 {
-    self.onComplet(self.txtEdit.text);
+    if (self.onComplet != nil) {
+        self.onComplet(self.txtEdit.text);
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)onOKTouched:(id)sender
+{
+    if (self.onComplet != nil) {
+        self.onComplet(self.selDateTime.date);
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -103,7 +119,9 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
 
-    self.onComplet(cell.textLabel.text);
+    if (self.onComplet != nil) {
+        self.onComplet(cell.textLabel.text);
+    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger, LMEditorType) {
 @interface EditorViewController : UIViewController
 - (IBAction)onCancelTouched:(id)sender;
 - (IBAction)onEditEnd:(id)sender;
+- (IBAction)onOKTouched:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *txtEdit;
 @property (weak, nonatomic) IBOutlet UIDatePicker *selDateTime;
