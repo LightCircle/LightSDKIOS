@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^LoginViewControllerComplet)();
+typedef BOOL (^LoginViewControllerComplet)();
 
 @interface LoginViewController : UIViewController
 
