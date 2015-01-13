@@ -26,8 +26,6 @@
 		F280565C19FF9A06007095A2 /* WTStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F280565419FF9A06007095A2 /* WTStatusView.m */; };
 		F280565D19FF9A06007095A2 /* WTStatusWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F280565519FF9A06007095A2 /* WTStatusWindow.h */; };
 		F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F280565619FF9A06007095A2 /* WTStatusWindow.m */; };
-		F280566219FF9A22007095A2 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F280566019FF9A22007095A2 /* MBProgressHUD.h */; };
-		F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F280566119FF9A22007095A2 /* MBProgressHUD.m */; };
 		F280566619FF9BB0007095A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566419FF9B56007095A2 /* UIKit.framework */; };
 		F280566819FF9C03007095A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566719FF9C03007095A2 /* Foundation.framework */; };
 		F280566A19FF9C2E007095A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F280566919FF9C2E007095A2 /* CoreGraphics.framework */; };
@@ -104,8 +102,6 @@
 		F280565419FF9A06007095A2 /* WTStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStatusView.m; sourceTree = "<group>"; };
 		F280565519FF9A06007095A2 /* WTStatusWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStatusWindow.h; sourceTree = "<group>"; };
 		F280565619FF9A06007095A2 /* WTStatusWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStatusWindow.m; sourceTree = "<group>"; };
-		F280566019FF9A22007095A2 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		F280566119FF9A22007095A2 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		F280566419FF9B56007095A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F280566719FF9C03007095A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F280566919FF9C2E007095A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -280,7 +276,6 @@
 				F2D634CA1A0AFF0800DDC5C3 /* Guide */,
 				F2D634BC1A0AFE5F00DDC5C3 /* Login */,
 				F2D634C01A0AFE5F00DDC5C3 /* Editor */,
-				F280565F19FF9A22007095A2 /* MBProgressHUD */,
 				F280564D19FF9A06007095A2 /* KxMenu */,
 				F280565019FF9A06007095A2 /* WTStatusBar */,
 			);
@@ -307,15 +302,6 @@
 				F280565619FF9A06007095A2 /* WTStatusWindow.m */,
 			);
 			path = WTStatusBar;
-			sourceTree = "<group>";
-		};
-		F280565F19FF9A22007095A2 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				F280566019FF9A22007095A2 /* MBProgressHUD.h */,
-				F280566119FF9A22007095A2 /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		F280567219FFA865007095A2 /* Storable */ = {
@@ -428,7 +414,6 @@
 				F280567519FFA865007095A2 /* ABStorable.h in Headers */,
 				F280565B19FF9A06007095A2 /* WTStatusView.h in Headers */,
 				F2189D411A1242370038D4D1 /* MSDynamicsDrawerViewController.h in Headers */,
-				F280566219FF9A22007095A2 /* MBProgressHUD.h in Headers */,
 				F280561C19FF93CE007095A2 /* LightSDK.h in Headers */,
 				F2D634CF1A0AFF0800DDC5C3 /* GuideViewController.h in Headers */,
 				F280563519FF9413007095A2 /* ABConfigManager.h in Headers */,
@@ -593,7 +578,6 @@
 				F2189D3F1A1242370038D4D1 /* MSDynamicsDrawerStyler.m in Sources */,
 				F280567619FFA865007095A2 /* ABStorable.m in Sources */,
 				F280563619FF9413007095A2 /* ABConfigManager.m in Sources */,
-				F280566319FF9A22007095A2 /* MBProgressHUD.m in Sources */,
 				F280565819FF9A06007095A2 /* KxMenu.m in Sources */,
 				F280565A19FF9A06007095A2 /* WTStatusBar.m in Sources */,
 				F280568119FFA90A007095A2 /* NSString+ABUtil.m in Sources */,

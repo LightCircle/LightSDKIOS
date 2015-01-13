@@ -51,5 +51,5 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage',                 '3.7.1'
   s.dependency 'Underscore.m',               '0.2.1'
   s.dependency 'JSONModel',                  '1.0.1'
-
+  s.dependency 'MBProgressHUD',              '~> 0.9'
 end

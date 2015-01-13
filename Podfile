@@ -10,7 +10,7 @@ pod 'CocoaLumberjack', '~> 1.9' # 日志管理
 pod 'SDWebImage', '~> 3.7.1'    # 图片缓存，URL加载
 pod 'Underscore.m', '~> 0.2.1'  #
 pod 'JSONModel', '~> 1.0.1'     # JSON对象转换
-
+pod 'MBProgressHUD', '~> 0.9'   # 加载遮罩层
 end
 
 target 'LightSDKTests' do
