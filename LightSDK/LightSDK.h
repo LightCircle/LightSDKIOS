@@ -36,7 +36,6 @@
 #import "LoginViewController.h"             // 登陆
 #import "EditorViewController.h"            // 通用编辑
 #import "QRCodeViewController.h"            // QRCode识别
-#import "MBProgressHUD.h"                   // （第三方包）等待
 #import "KxMenu.h"                          // （第三方包）单出菜单
 #import "WTStatusBar.h"                     // （第三方包）工具栏显示进度
 #import "MSDynamicsDrawerStyler.h"          // （第三方包）侧面菜单风格
