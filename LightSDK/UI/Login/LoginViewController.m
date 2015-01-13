@@ -20,107 +20,112 @@
 
 @implementation LoginViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.btnLogin.backgroundColor = self.color;
     self.imgLogo.image = self.logo;
     [self.txtUserID becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Custom Functions
 
-+ (LoginViewController *)loadController
-{
++ (LoginViewController *)loadController {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
     return [sb instantiateViewControllerWithIdentifier:@"LoginViewController"];
 }
 
-+ (void)logout
-{
++ (void)logout {
     [ABConfigManager.defaults removeObjectForKey:kConfigManagerUserID];
     [ABConfigManager.defaults removeObjectForKey:kConfigManagerCookie];
     [ABConfigManager.defaults removeObjectForKey:kConfigManagerCsrfToken];
     [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:kNotificationNameNeedsLogin object:nil]];
 }
 
-- (IBAction)onLoginClicked:(id)sender
-{
+- (IBAction)onLoginClicked:(id)sender {
     // 记住用户ID
     [ABConfigManager.defaults setObject:self.txtUserID.text forKey:kConfigManagerDefaultUserID];
-    
+
     if ([self isValid] == NO) {
         return;
     }
-    
+
     [self login];
 }
 
-- (void)login
-{
+- (void)login {
     // 登陆参数
-    NSString *params = [NSString stringWithFormat:@"name=%@&password=%@", self.txtUserID.text, self.txtPassword.text];
-    
+    NSString *params = [NSString stringWithFormat:@"name=%@&password=%@", [ABHelper encode:self.txtUserID.text], [ABHelper encode:self.txtPassword.text]];
+
+    NSString *pushToken = [ABConfigManager.defaults stringForKey:kConfigManagerDeviceToken];
+    if (pushToken) {
+        params = [NSString stringWithFormat:@"%@&pushToken=%@&type=ios", params, [ABHelper encode:pushToken]];
+    }
+
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    
+
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [manager GET:[ABHelper url:@"/user/login" params:params]
       parameters:nil
          success:^(NSURLSessionDataTask *task, id responseObject) {
-             
+
              NSDictionary *data = responseObject[@"data"];
-             
+
              // 保存登陆用户用户
-             NSError* error = nil;
+             NSError *error = nil;
              User *user = [[User alloc] initWithDictionary:data error:&error];
              [ABConfigManager.defaults setObject:user.id forKey:kConfigManagerUserID];
-             
+
              // 保存和cookie，csrftoken
-             NSDictionary *headerFields = [((NSHTTPURLResponse *)task.response) allHeaderFields];
+             NSDictionary *headerFields = [((NSHTTPURLResponse *) task.response) allHeaderFields];
              [ABConfigManager.defaults setObject:[headerFields objectForKey:kHTTPHeaderCookieName] forKey:kConfigManagerCookie];
              [ABConfigManager.defaults setObject:[headerFields objectForKey:kHTTPHeaderCsrftokenName] forKey:kConfigManagerCsrfToken];
-             // 设有回调函数，则调用
-             if (self.onComplet) {
-                 self.onComplet();
-             }
-             
+
              // 关闭登陆画面
              [MBProgressHUD hideHUDForView:self.view animated:YES];
-             [self.view removeFromSuperview];
+
+             // 设有回调函数，则调用
+             if (user && !error) {
+
+                 if (!self.onComplet || self.onComplet(user)) {
+                     [self.view removeFromSuperview];
+                 }
+             } else {
+                 [ABHelper showError:@"登录失败"];
+             }
+
+
          } failure:^(NSURLSessionDataTask *task, NSError *error) {
-             
-             // 错误
-             NSLog(@"Error: %@", error);
-             [MBProgressHUD hideHUDForView:self.view animated:YES];
-             [ABHelper showError:error.description];
-         }];
+
+                // 错误
+                NSLog(@"Error: %@", error);
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                [ABHelper showError:error.description];
+            }];
 }
 
-- (BOOL)isValid
-{
+- (BOOL)isValid {
     // 检证userId是否为空，去掉前后的半角和全角空格
-    NSString * userId = [self.txtUserID.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" 　" ]];
+    NSString *userId = [self.txtUserID.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" 　"]];
     if (userId.length == 0) {
         [ABHelper showError:@"请输入用户名"];
         [self.txtUserID becomeFirstResponder];
         return NO;
     }
-    
+
     // 检证password是否为空，去掉前后的半角和全角空格
-    NSString * password = [self.txtPassword.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" 　" ]];
-    if ( password.length  == 0) {
+    NSString *password = [self.txtPassword.text stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@" 　"]];
+    if (password.length == 0) {
         [ABHelper showError:@"请输入密码"];
         [self.txtPassword becomeFirstResponder];
         return NO;
     }
-    
+
     return YES;
 }
 
