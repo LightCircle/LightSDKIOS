@@ -6,16 +6,13 @@
 //
 
 #import "ABStorable.h"
-#import "ABLogger.h"
 #import "NSString+ABUtil.h"
 
-static int ddLogLevel;
 
 @implementation ABStorable
 
 + (instancetype)sharedManager {
     static ABStorable *_sharedManager = nil;
-    ddLogLevel = [ABLogger currentLevel];
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -31,7 +28,7 @@ static int ddLogLevel;
     NSObject *cacheData = [_cacher objectForKey:key];
 
     if (cacheData) {
-        DDLogDebug(@"get obj form cache by key: %@", key);
+        NSLog(@"get obj form cache by key: %@", key);
         return cacheData;
     } else {
         
@@ -39,10 +36,10 @@ static int ddLogLevel;
         NSObject *data =  [NSKeyedUnarchiver unarchiveObjectWithFile:path];
         if(data){
             [_cacher setObject:data forKey:key];
-            DDLogDebug(@"get obj form file: %@", path);
+            NSLog(@"get obj form file: %@", path);
             return data;
         }else{
-            DDLogDebug(@"can not get obj by key:[%@]",key);
+            NSLog(@"can not get obj by key:[%@]",key);
             return nil;
         }
     }
@@ -56,7 +53,7 @@ static int ddLogLevel;
     [_cacher setObject:obj forKey:key];
     if ([NSString isEmpty:self.storeDir]) {
         self.storeDir = [self defaultDir];
-        DDLogDebug(@"use default store location:%@", self.storeDir);
+        NSLog(@"use default store location:%@", self.storeDir);
     }
     return [NSKeyedArchiver archiveRootObject:obj toFile:[self filePathByKey:key]];
 }
@@ -92,7 +89,7 @@ static int ddLogLevel;
         NSError *error;
         [[NSFileManager defaultManager] createDirectoryAtPath:sContentsDir withIntermediateDirectories:YES attributes:nil error:&error];
         if (error) {
-            DDLogError(@"error create dir [%@] ,error:%@", sContentsDir, [error description]);
+            NSLog(@"error create dir [%@] ,error:%@", sContentsDir, [error description]);
         }
     }
     return sContentsDir;
@@ -101,7 +98,7 @@ static int ddLogLevel;
 - (NSString *)filePathByKey:(NSString*)key{
     if ([NSString isEmpty:self.storeDir]) {
         self.storeDir = [self defaultDir];
-        DDLogDebug(@"use default store location:%@", self.storeDir);
+        NSLog(@"use default store location:%@", self.storeDir);
     }
     NSCharacterSet *illegalFileNameCharacters = [NSCharacterSet characterSetWithCharactersInString:@"/\\?%*|\"<>"];
     return [self.storeDir stringByAppendingPathComponent:

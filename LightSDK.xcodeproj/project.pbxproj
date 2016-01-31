@@ -36,11 +36,6 @@
 		F280567D19FFA8CC007095A2 /* ABMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F280567A19FFA8CC007095A2 /* ABMacros.h */; };
 		F280568019FFA90A007095A2 /* NSString+ABUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = F280567E19FFA90A007095A2 /* NSString+ABUtil.h */; };
 		F280568119FFA90A007095A2 /* NSString+ABUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F280567F19FFA90A007095A2 /* NSString+ABUtil.m */; };
-		F280568C19FFA9A5007095A2 /* ABLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F280568319FFA9A5007095A2 /* ABLogger.h */; };
-		F280568D19FFA9A5007095A2 /* ABLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F280568419FFA9A5007095A2 /* ABLogger.m */; };
-		F280569619FFA9E2007095A2 /* ABLoggerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F280569519FFA9E2007095A2 /* ABLoggerHeader.h */; };
-		F280569919FFAA55007095A2 /* ABLoggerFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F280569719FFAA55007095A2 /* ABLoggerFormatter.h */; };
-		F280569A19FFAA55007095A2 /* ABLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F280569819FFAA55007095A2 /* ABLoggerFormatter.m */; };
 		F280569C19FFB2A9007095A2 /* LightSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F280569B19FFB2A9007095A2 /* LightSDK.podspec */; };
 		F28056AC19FFC5EC007095A2 /* ABDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = F28056AA19FFC5EC007095A2 /* ABDefine.h */; };
 		F28056B219FFCEAF007095A2 /* ABAPIUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = F28056AF19FFCEAF007095A2 /* ABAPIUrl.h */; };
@@ -112,11 +107,6 @@
 		F280567A19FFA8CC007095A2 /* ABMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABMacros.h; sourceTree = "<group>"; };
 		F280567E19FFA90A007095A2 /* NSString+ABUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ABUtil.h"; sourceTree = "<group>"; };
 		F280567F19FFA90A007095A2 /* NSString+ABUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ABUtil.m"; sourceTree = "<group>"; };
-		F280568319FFA9A5007095A2 /* ABLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLogger.h; sourceTree = "<group>"; };
-		F280568419FFA9A5007095A2 /* ABLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLogger.m; sourceTree = "<group>"; };
-		F280569519FFA9E2007095A2 /* ABLoggerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoggerHeader.h; sourceTree = "<group>"; };
-		F280569719FFAA55007095A2 /* ABLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABLoggerFormatter.h; sourceTree = "<group>"; };
-		F280569819FFAA55007095A2 /* ABLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABLoggerFormatter.m; sourceTree = "<group>"; };
 		F280569B19FFB2A9007095A2 /* LightSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LightSDK.podspec; sourceTree = "<group>"; };
 		F28056AA19FFC5EC007095A2 /* ABDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDefine.h; sourceTree = "<group>"; };
 		F28056AF19FFCEAF007095A2 /* ABAPIUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABAPIUrl.h; sourceTree = "<group>"; };
@@ -224,7 +214,6 @@
 			children = (
 				F280563219FF9413007095A2 /* Config */,
 				F28056AE19FFCEAF007095A2 /* Entity */,
-				F280568219FFA9A5007095A2 /* Logger */,
 				F280567219FFA865007095A2 /* Storable */,
 				F280567719FFA8CC007095A2 /* Util */,
 				F280564C19FF99F0007095A2 /* UI */,
@@ -326,18 +315,6 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		F280568219FFA9A5007095A2 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				F280568319FFA9A5007095A2 /* ABLogger.h */,
-				F280568419FFA9A5007095A2 /* ABLogger.m */,
-				F280569519FFA9E2007095A2 /* ABLoggerHeader.h */,
-				F280569719FFAA55007095A2 /* ABLoggerFormatter.h */,
-				F280569819FFAA55007095A2 /* ABLoggerFormatter.m */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
 		F28056AE19FFCEAF007095A2 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,9 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2189D3E1A1242370038D4D1 /* MSDynamicsDrawerStyler.h in Headers */,
-				F280569919FFAA55007095A2 /* ABLoggerFormatter.h in Headers */,
 				F280565719FF9A06007095A2 /* KxMenu.h in Headers */,
-				F280568C19FFA9A5007095A2 /* ABLogger.h in Headers */,
 				F28056B319FFCEAF007095A2 /* ABEntities.h in Headers */,
 				F280565D19FF9A06007095A2 /* WTStatusWindow.h in Headers */,
 				F2D634C51A0AFE5F00DDC5C3 /* LoginViewController.h in Headers */,
@@ -421,7 +396,6 @@
 				F2D634C81A0AFE5F00DDC5C3 /* EditorViewController.h in Headers */,
 				F28056B219FFCEAF007095A2 /* ABAPIUrl.h in Headers */,
 				F280568019FFA90A007095A2 /* NSString+ABUtil.h in Headers */,
-				F280569619FFA9E2007095A2 /* ABLoggerHeader.h in Headers */,
 				F2D635081A0E091C00DDC5C3 /* QRCodeViewController.h in Headers */,
 				F280567B19FFA8CC007095A2 /* ABHelper.h in Headers */,
 			);
@@ -571,7 +545,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F280569A19FFAA55007095A2 /* ABLoggerFormatter.m in Sources */,
 				F280567C19FFA8CC007095A2 /* ABHelper.m in Sources */,
 				F2D634D01A0AFF0800DDC5C3 /* GuideViewController.m in Sources */,
 				F2D634C61A0AFE5F00DDC5C3 /* LoginViewController.m in Sources */,
@@ -582,7 +555,6 @@
 				F280565A19FF9A06007095A2 /* WTStatusBar.m in Sources */,
 				F280568119FFA90A007095A2 /* NSString+ABUtil.m in Sources */,
 				F280565C19FF9A06007095A2 /* WTStatusView.m in Sources */,
-				F280568D19FFA9A5007095A2 /* ABLogger.m in Sources */,
 				F280565E19FF9A06007095A2 /* WTStatusWindow.m in Sources */,
 				F28056B419FFCEAF007095A2 /* ABEntities.m in Sources */,
 				F2D635091A0E091C00DDC5C3 /* QRCodeViewController.m in Sources */,
